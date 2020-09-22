@@ -1,0 +1,11 @@
+version: '1.0'
+
+services:
+    maxmilhas:
+        container_name: maxmilhas
+        image: maxmilhas:bismarck
+        build:
+            context: ../
+            dockerfile: docker/Dockerfile
+        ports:
+            - 3000:3000

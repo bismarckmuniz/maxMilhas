@@ -1,0 +1,28 @@
+<%- include('./layout/head') %>
+<%- include('./layout/navbar') %>
+   <div class="section no-pad-bot" id="index-banner">
+       <div class="container">
+           <br><br>
+           <div class="row center">
+               <h2 class="header center">Database BlackList</h2>
+                <div class="col s8 offset-s2 card-panel">
+                   <br><br>
+                   <span> <%= backlist.cpf %> - O CPF encontra-se na BlackList</span><br>
+                   <span>Data da inclusão: <%= backlist.data %></span><br>
+                   <p><span class="z-depth-3 white-text red padding-5"> BLOCK </span></p>
+                    <div class="col s6 right-align">
+                        <form action="/remove" method="post" id="remove">
+                           <input type="hidden" name="id" value="<%= id %>">
+                           <input type="submit" value="REMOVER" id="remove" class="btn blue">
+                        </form>
+                    </div>
+                    <div class="col s6 left-align">
+                        <a href="/" class="btn blue">VOLTAR</a>
+                    </div>
+                   <br><br>
+                </div>
+           </div>
+           <br><br><br><br><br><br><br>
+       </div>
+   </div>
+<%- include('./layout/footer') %>

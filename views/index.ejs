@@ -1,0 +1,26 @@
+<%- include('./layout/head') %>
+<%- include('./layout/navbar') %>
+   <div class="section no-pad-bot" id="index-banner">
+       <div class="container">
+           <br><br>
+           <div class="row center">
+
+               <h3 class="header center">Situação Cadastral CPF - BlackList</h3>
+               <div class="col s8 offset-s2 card-panel">
+                   <br>
+                   <form action="/view" method="post">
+                       <div class="input-field col s6 offset-s3">
+                           <input placeholder="Digite um CPF para realizar a consulta" name="cpf" id="cpf" type="text" class="validate" required>
+                           <label for="cpf">CPF</label>
+                       </div>
+                       <div class="col s12">
+                           <input type="submit" value="CONSULTAR" class="btn blue">
+                           <br><br>
+                       </div>
+                   </form>
+               </div>
+           </div>
+           <br><br><br><br><br><br><br>
+       </div>
+   </div>
+<%- include('./layout/footer') %>

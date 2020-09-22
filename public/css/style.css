@@ -1,0 +1,19 @@
+body {
+  font-family: 'Dosis', sans-serif;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.icon-42{
+  height: 42px;
+}
+
+.padding-5{
+  padding: 5px;
+}
